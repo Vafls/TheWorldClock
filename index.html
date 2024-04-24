@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Время по городам</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Время по городам</h1>
+        <ul class="countries-list">
+            <li>
+                <span class="country">Россия</span>
+                <ul class="cities">
+                    <li><span class="city">Москва</span>: <span class="time" id="moscow-time"></span></li>
+                    <li><span class="city">Санкт-Петербург</span>: <span class="time" id="spb-time"></span></li>
+                    <li><span class="city">Екатеринбург</span>: <span class="time" id="ekb-time"></span></li>
+                    <li><span class="city">Новосибирск</span>: <span class="time" id="novosibirsk-time"></span></li>
+                    <li><span class="city">Красноярск</span>: <span class="time" id="krasnoyarsk-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">США</span>
+                <ul class="cities">
+                    <li><span class="city">Нью-Йорк</span>: <span class="time" id="ny-time"></span></li>
+                    <li><span class="city">Лос-Анджелес</span>: <span class="time" id="la-time"></span></li>
+                    <li><span class="city">Чикаго</span>: <span class="time" id="chicago-time"></span></li>
+                    <li><span class="city">Хьюстон</span>: <span class="time" id="houston-time"></span></li>
+                    <li><span class="city">Филадельфия</span>: <span class="time" id="philadelphia-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Великобритания</span>
+                <ul class="cities">
+                    <li><span class="city">Лондон</span>: <span class="time" id="london-time"></span></li>
+                    <li><span class="city">Бирмингем</span>: <span class="time" id="birmingham-time"></span></li>
+                    <li><span class="city">Ливерпуль</span>: <span class="time" id="liverpool-time"></span></li>
+                    <li><span class="city">Манчестер</span>: <span class="time" id="manchester-time"></span></li>
+                    <li><span class="city">Глазго</span>: <span class="time" id="glasgow-time"></span></li>
+                </ul>
+            </li>
+            <!-- Добавим здесь другие страны и города -->
+            <li>
+                <span class="country">Канада</span>
+                <ul class="cities">
+                    <li><span class="city">Торонто</span>: <span class="time" id="toronto-time"></span></li>
+                    <li><span class="city">Ванкувер</span>: <span class="time" id="vancouver-time"></span></li>
+                    <li><span class="city">Монреаль</span>: <span class="time" id="montreal-time"></span></li>
+                    <li><span class="city">Калгари</span>: <span class="time" id="calgary-time"></span></li>
+                    <li><span class="city">Оттава</span>: <span class="time" id="ottawa-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Китай</span>
+                <ul class="cities">
+                    <li><span class="city">Пекин</span>: <span class="time" id="beijing-time"></span></li>
+                    <li><span class="city">Шанхай</span>: <span class="time" id="shanghai-time"></span></li>
+                    <li><span class="city">Гуанчжоу</span>: <span class="time" id="guangzhou-time"></span></li>
+                    <li><span class="city">Шэньчжэнь</span>: <span class="time" id="shenzhen-time"></span></li>
+                    <li><span class="city">Чунцин</span>: <span class="time" id="chongqing-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Япония</span>
+                <ul class="cities">
+                    <li><span class="city">Токио</span>: <span class="time" id="tokyo-time"></span></li>
+                    <li><span class="city">Осака</span>: <span class="time" id="osaka-time"></span></li>
+                    <li><span class="city">Нагоя</span>: <span class="time" id="nagoya-time"></span></li>
+                    <li><span class="city">Саппоро</span>: <span class="time" id="sapporo-time"></span></li>
+                    <li><span class="city">Киото</span>: <span class="time" id="kyoto-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Франция</span>
+                <ul class="cities">
+                    <li><span class="city">Париж</span>: <span class="time" id="paris-time"></span></li>
+                    <li><span class="city">Марсель</span>: <span class="time" id="marseille-time"></span></li>
+                    <li><span class="city">Лион</span>: <span class="time" id="lyon-time"></span></li>
+                    <li><span class="city">Тулуза</span>: <span class="time" id="toulouse-time"></span></li>
+                    <li><span class="city">Ницца</span>: <span class="time" id="nice-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Индия</span>
+                <ul class="cities">
+                    <li><span class="city">Нью-Дели</span>: <span class="time" id="delhi-time"></span></li>
+                    <li><span class="city">Мумбаи</span>: <span class="time" id="mumbai-time"></span></li>
+                    <li><span class="city">Бангалор</span>: <span class="time" id="bangalore-time"></span></li>
+                    <li><span class="city">Ченнаи</span>: <span class="time" id="chennai-time"></span></li>
+                    <li><span class="city">Калькутта</span>: <span class="time" id="kolkata-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Германия</span>
+                <ul class="cities">
+                    <li><span class="city">Берлин</span>: <span class="time" id="berlin-time"></span></li>
+                    <li><span class="city">Гамбург</span>: <span class="time" id="hamburg-time"></span></li>
+                    <li><span class="city">Мюнхен</span>: <span class="time" id="munich-time"></span></li>
+                    <li><span class="city">Кёльн</span>: <span class="time" id="cologne-time"></span></li>
+                    <li><span class="city">Франкфурт-на-Майне</span>: <span class="time" id="frankfurt-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Италия</span>
+                <ul class="cities">
+                    <li><span class="city">Рим</span>: <span class="time" id="rome-time"></span></li>
+                    <li><span class="city">Милан</span>: <span class="time" id="milan-time"></span></li>
+                    <li><span class="city">Неаполь</span>: <span class="time" id="naples-time"></span></li>
+                    <li><span class="city">Турин</span>: <span class="time" id="turin-time"></span></li>
+                    <li><span class="city">Палермо</span>: <span class="time" id="palermo-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Бразилия</span>
+                <ul class="cities">
+                    <li><span class="city">Сан-Паулу</span>: <span class="time" id="saopaulo-time"></span></li>
+                    <li><span class="city">Рио-де-Жанейро</span>: <span class="time" id="riodejaneiro-time"></span></li>
+                    <li><span class="city">Бразилиа</span>: <span class="time" id="brasilia-time"></span></li>
+                    <li><span class="city">Сальвадор</span>: <span class="time" id="salvador-time"></span></li>
+                    <li><span class="city">Форталеза</span>: <span class="time" id="fortaleza-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Австралия</span>
+                <ul class="cities">
+                    <li><span class="city">Сидней</span>: <span class="time" id="sydney-time"></span></li>
+                    <li><span class="city">Мельбурн</span>: <span class="time" id="melbourne-time"></span></li>
+                    <li><span class="city">Брисбен</span>: <span class="time" id="brisbane-time"></span></li>
+                    <li><span class="city">Перт</span>: <span class="time" id="perth-time"></span></li>
+                    <li><span class="city">Аделаида</span>: <span class="time" id="adelaide-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Испания</span>
+                <ul class="cities">
+                    <li><span class="city">Мадрид</span>: <span class="time" id="madrid-time"></span></li>
+                    <li><span class="city">Барселона</span>: <span class="time" id="barcelona-time"></span></li>
+                    <li><span class="city">Валенсия</span>: <span class="time" id="valencia-time"></span></li>
+                    <li><span class="city">Севилья</span>: <span class="time" id="seville-time"></span></li>
+                    <li><span class="city">Сарагоса</span>: <span class="time" id="zaragoza-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Мексика</span>
+                <ul class="cities">
+                    <li><span class="city">Мехико</span>: <span class="time" id="mexicocity-time"></span></li>
+                    <li><span class="city">Гвадалахара</span>: <span class="time" id="guadalajara-time"></span></li>
+                    <li><span class="city">Монтеррей</span>: <span class="time" id="monterrey-time"></span></li>
+                    <li><span class="city">Пуэбла</span>: <span class="time" id="puebla-time"></span></li>
+                    <li><span class="city">Толука</span>: <span class="time" id="toluca-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Южная Корея</span>
+                <ul class="cities">
+                    <li><span class="city">Сеул</span>: <span class="time" id="seoul-time"></span></li>
+                    <li><span class="city">Пусан</span>: <span class="time" id="busan-time"></span></li>
+                    <li><span class="city">Инчхон</span>: <span class="time" id="incheon-time"></span></li>
+                    <li><span class="city">Даегу</span>: <span class="time" id="daegu-time"></span></li>
+                    <li><span class="city">Даеун</span>: <span class="time" id="daejeon-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Саудовская Аравия</span>
+                <ul class="cities">
+                    <li><span class="city">Эр-Рияд</span>: <span class="time" id="riyadh-time"></span></li>
+                    <li><span class="city">Джидда</span>: <span class="time" id="jeddah-time"></span></li>
+                    <li><span class="city">Мекка</span>: <span class="time" id="mecca-time"></span></li>
+                    <li><span class="city">Медина</span>: <span class="time" id="medina-time"></span></li>
+                    <li><span class="city">Даммам</span>: <span class="time" id="dammam-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Швейцария</span>
+                <ul class="cities">
+                    <li><span class="city">Цюрих</span>: <span class="time" id="zurich-time"></span></li>
+                    <li><span class="city">Женева</span>: <span class="time" id="geneva-time"></span></li>
+                    <li><span class="city">Базель</span>: <span class="time" id="basel-time"></span></li>
+                    <li><span class="city">Лозанна</span>: <span class="time" id="lausanne-time"></span></li>
+                    <li><span class="city">Берн</span>: <span class="time" id="bern-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Швеция</span>
+                <ul class="cities">
+                    <li><span class="city">Стокгольм</span>: <span class="time" id="stockholm-time"></span></li>
+                    <li><span class="city">Гётеборг</span>: <span class="time" id="gothenburg-time"></span></li>
+                    <li><span class="city">Мальмё</span>: <span class="time" id="malmo-time"></span></li>
+                    <li><span class="city">Уппсала</span>: <span class="time" id="uppsala-time"></span></li>
+                    <li><span class="city">Вестерос</span>: <span class="time" id="vasteras-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Нидерланды</span>
+                <ul class="cities">
+                    <li><span class="city">Амстердам</span>: <span class="time" id="amsterdam-time"></span></li>
+                    <li><span class="city">Роттердам</span>: <span class="time" id="rotterdam-time"></span></li>
+                    <li><span class="city">Гаага</span>: <span class="time" id="thehague-time"></span></li>
+                    <li><span class="city">Утрехт</span>: <span class="time" id="utrecht-time"></span></li>
+                    <li><span class="city">Эйндховен</span>: <span class="time" id="eindhoven-time"></span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="country">Норвегия</span>
+                <ul class="cities">
+                    <li><span class="city">Осло</span>: <span class="time" id="oslo-time"></span></li>
+                    <li><span class="city">Берген</span>: <span class="time" id="bergen-time"></span></li>
+                    <li><span class="city">Ставангер</span>: <span class="time" id="stavanger-time"></span></li>
+                    <li><span class="city">Тронхейм</span>: <span class="time" id="trondheim-time"></span></li>
+                    <li><span class="city">Тромсё</span>: <span class="time" id="tromso-time"></span></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
